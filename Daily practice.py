@@ -17,4 +17,5 @@ print(x100)
 xt3 = "Fujicilm X-t3"
 print(xt3)
 
-
+print("Today \
+      is a good day")
