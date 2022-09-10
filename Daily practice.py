@@ -19,3 +19,10 @@ print(xt3)
 
 print("Today \
       is a good day")
+
+none = "No one next to Emily"
+
+print(none)
+
+tuple1 = ("banana" , "apple","blueberry")
+print(tuple1)
