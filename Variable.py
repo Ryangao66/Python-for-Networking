@@ -48,5 +48,15 @@ print(a)
 f = r'a\b' # r means keep original meaning
 print(f)
 
+list1 = ["f0/0", "f0/1", "f0/2"]
+print(list1)
+
+dict1 = {"config_speed": "auto", "config_duplex" : "auto", "config_ip" : "192.168.1.1"}
+print(dict1)
 
 
+"Interface_Config" : {
+    "ip_address" : "192.168.1.109",
+    "subnet_mask" : "255.255.255.0",
+    "speed" : 1000
+}
