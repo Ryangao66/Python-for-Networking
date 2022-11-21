@@ -16,6 +16,8 @@
 # color = input('What is your favorite color? ')
 # print(name + ' Like ' + color)
 #
+
+
 print('=' * 40)
 
 # birth_year = input("Birth year: ")
@@ -215,7 +217,6 @@ elif unit() == "stop":
     print("Car stopped...")
 elif unit() == "quit":
     print("Gave over")
-'''
 
 command = ""
 started = False
@@ -234,14 +235,254 @@ while True:
             started = False
             print("Car stop...")
     elif command == "help":
-        print('''
-              start - to start the car 
-              stop - to stop the car
-              quit - to exit 
-              ''')
-    elif command == "quit":
-        break
-    else:
-        print("I don't understand WTF is this, you biatch! try 'help' !!!")
+          print('''
+  #            start - to start the car
+  #            stop - to stop the car
+  #            quit - to exit
+  #            ''')
+  #  elif command == "quit":
+  #      break
+  #  else:
+  #      print("I don't understand WTF is this, you biatch! try 'help' !!!")
 
+
+
+
+'''
+# For loop
+
+for item in ["Mosh", "John", "Sarah"]:
+    print(item)
+
+for item in range(5, 15, 2):
+    print(item)
+
+
+
+prices = [10, 20, 30]
+total = 0
+for price in prices:
+    total += price
+print(f"Total: {total}")
+
+
+
+# Nested loop
+
+for x in range(4):
+    for y in range(3):
+        print(f"({x}, {y})")
+
+'''
+''' Easy way
+numbers = [5, 2, 5, 2, 2]
+for x in (numbers):
+    print(x * ("x"))
+
+# Nested loop
+numbers = [2, 2, 2, 2, 5]
+for x in numbers:
+    output = ""
+    for count in range(x):
+        output += "x"
+    print(output)
+'''
+'''
+names = ["John", "Bob", "Mosh", "Sarah", "Mary"]
+print(names[-2])
+print(names[2:])
+print(names)
+names[0] = "Laura"
+print(names)
+
+# Largest number
+
+numbers = [3, 6, 2, 8, 4, 10]
+max = numbers[0]
+for number in numbers:
+    if number > max:
+        max = number
+print(max)
+
+
+# 2D lists
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+#print(matrix[0][1])
+for row in matrix:
+    for item in row:
+        print(item)
+for row in matrix:
+    print(row)
+    
+
+# List methods
+
+number = [5, 2, 1, 7, 4]
+number.append(20)
+number.insert(0, 10)
+number.remove(1)
+number.sort()
+number.reverse()
+number.pop()  # remove the last number which is 20
+# number.clear()
+print(number)
+print(number.index(5))
+
+
+
+numbers = [4, 4, 5, 6, 2, 8, 5, 9]
+uniques = []
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)
+
+
+# Tuples & Unpacking
+
+tuple1 = (1, 2, 3)
+x, y, z = tuple1
+print(x)
+
+
+
+# Dictionaries
+
+customer = {
+    "name": "John Smith",
+    "age": 30,
+    "is_verified": True
+}
+customer["name"] = "Jack Smith"
+print(customer["name"])
+
+
+phone = input("Phone: ")
+digit = {
+    "1": "One ",
+    "2": "Two ",
+    "3": "Three ",
+    "4": "Four ",
+}
+output = ""
+for character in phone:
+    output += digit.get(character, "!") + ""
+print(output)
+
+
+
+# Emoji converter
+message = input(">" )
+words = message.split(" ")
+emojis = {
+    ":)": "😊",
+    "lol": "😂",
+    "^_^": "😄"
+}
+output = ""
+for word in words:
+    output += emojis.get(word, word)
+print(output)
+
+
+'''
+'''
+# Functions
+
+def greet_user():
+    print("Hi there!")
+    print('Welcome onboard!')
+
+print("Start!")
+greet_user()
+print("Finish")
+
+
+'''
+'''
+
+# Parameters
+
+def greet_user(first_name, last_name):
+    print(f"Hi {first_name} {last_name}!")
+    print("Welcome onboard!")
+
+print("Strart!")
+greet_user("John", "Smith")
+greet_user("Mary", "Chandler")
+print("Finish")
+
+
+
+def square(number):
+    return number * number
+
+result = square(3)
+print(result)
+
+
+'''
+
+'''
+
+# Reusable function
+
+def emoji_converter(message):
+    words = message.split(" ")
+    emojis = {
+        ":)": "😊",
+        "lol": "😂",
+        "^_^": "😄"
+    }
+    output = ""
+    for word in words:
+        output += emojis.get(word, word)
+    return output
+message = input(">")
+
+result = emoji_converter(message)
+
+print(result)
+
+'''
+
+# Exception
+
+'''
+try:
+    age = int(input("Age: "))
+    income = 20000
+    risk = income /age
+    print(age)
+except ZeroDivisionError:
+    print("Age cannot be 0.")
+except ValueError:
+    print("Invalid value")
+    
+'''
+'''
+# Classes
+
+class Point:
+    def move(self):
+        print("move")
+    def draw(self):
+        print("draw")
+
+point1 = Point()
+point1.move()
+point1.draw()
+point1.x = 10
+point1.y = 20
+print(point1.x)
+print(point1.y)
+
+'''
+
+# Constructors
 
